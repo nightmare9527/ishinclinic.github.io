@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="mobile_button" id="mobile_button" >
+    <img src="css/image/burger-bar.png">
+</div>
+<header class="header-main" id="header">
+    <div class="header-main-logo">
+        <img src="css/image/logo.png">
+        <nav class="header-main-nav">
+            <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">最新消息</a></li>
+            <li><a href="#">服務內容</a>
+                <ul class="dropdown">
+                    <li><a href="#">門診醫療</a></li>
+                    <li><a href="#">個別心理諮商</a></li>
+                    <li><a href="#">家族/伴侶/親子諮商</a></li>
+                    <li><a href="#">成長團體/課程/講座</a></li>
+                    <li><a href="#">心理衡鑑/評估</a></li>
+                    <li><a href="#">專業督導/合作邀約</a></li>
+                </ul>
+            </li>
+            <li><a href="#">專業團隊</a>
+                <ul class="dropdown">
+                    <li><a href="#">主治醫師</a></li>
+                    <li><a href="#">心理師</a></li>
+                </ul>
+            </li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">文章分享</a></li>
+            <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-main-sm">
+        <a href="https://www.facebook.com/psyihsin"><div class="header-main-sm-fb"></div></a>
+        <a herf="#"><div class="header-main-sm-line"></div></a>
+    </div>
+</header>
+<main>
+    <div class="main-intro">
+        <h1>歡迎來到<br>怡心診所</h1>
+        <a herf="#">立即掛號</a>
+    </div>
+    <div class="main-quotes">
+        <p><br>“There is no health without mental health; <br>mental health is too important to be left to the professionals alone,<br> 
+            and mental health is everyone's business.”<br><br>― Vikram Patel</p>
+        <p><br>“Health is a state of complete physical, <br>mental and social well-being<br> 
+            and not merely the absence of disease or infirmity.”<br><br>― World Health Organization</p>
+    </div>
+    <!-- <img src="css/image/mom.png"> -->
+</main>
+<section class="index-category">
+    <div class="index-category-box">
+        <h3>門診時段</h3>
+        <h4><br><br>門診掛號說明:</h4>
+        <p>1.怡心診所提供健保門診與自費門診<br>
+            2.請於週一至週五下午1:00-8:00、<br>週六上午9:00-下午5:00來電預約<br>
+            3.初次預約前，請先閱讀門診注意事項
+        </p>
+        <div class="a-box">
+            <a herf="#">門診注意事項</a>
+            <a herf="#">來電預約</a>
+        </div>
+    </div>
+    <img src="css/image/schedule.png">
+</section>
+
+<section class="index-about">
+        <div class="index-about-box01">
+            <h2>王怡仁<br></h2>
+                <h3><br>院長／醫師</h3>
+        </div>
+        <div class="index-about-box02">
+            <h2>郭雅君</h2>
+            <h3><br>副院長／醫師</h3>
+        </div>
+</section>
+
+<footer>
+    <div class="info">
+        <h3>電話:</h3>
+        <p>02-2707-0112、02-2704-1325</p>
+        <h3>地址:</h3>
+        <p>台北市大安區大安路一段169巷7號</p>
+        <h3>Email:</h3>
+        <p>ihsinpsy@gmail.com</p>
+        <h3>​營業時間:</h3>
+        <p>週一至週五，下午1:00至下午9:00</p>
+            <p>週六，上午9:00至下午6:00</p>
+    </div>
+    <img src="css/image/address.png">
+</footer>
+    <!-- <div class="container">
+        <h1 class="big-title">歡迎來到健康共創協會</h1>
+    </div> -->
+    <script>
+        var buttonnav = document.getElementById("mobile_button");
+        var is_open = false;
+        buttonnav.addEventListener("click", function() {
+            var header = document.getElementById("header");
+            if (is_open) {
+                header.style.display = "none";
+                is_open = false;
+            } else {
+                header.style.display = "flex";
+                is_open = true;
+            }
+        });
+    </script>
+</body>
+</html>
