@@ -21,11 +21,9 @@ body:after{
     z-index: -1;
 
 }
-.big-title {
-    font-size: 4em;
-    text-align: center;
-    color: #fff;
-    /* margin-top: 20vh; Adjusts title positioning */
+.wrapper-main{
+    width: 1500px;
+    margin: 0 auto;
 }
 a{
     font-size: 14px;
@@ -76,6 +74,7 @@ p{
 .header-main-logo img {
     height: 50px;
     align-self: center;
+    padding-left: 30px;
 }
 .header-main-nav {
     /* display: flex; */
@@ -173,4 +172,6 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media(max-width: 600px){
 
+}
