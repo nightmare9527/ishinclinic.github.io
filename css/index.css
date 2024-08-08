@@ -152,3 +152,125 @@ main img{
 .sub-list{
     margin-left: 20px;
 }
+@media(max-width: 600px){
+    main{
+        width: 100%;
+        height: 80vh;
+        background-color: #1A253A;
+        background-image: url(./image/back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-intro{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-intro h1{
+        color: rgb(255, 255, 255);
+        font-size: 86px;
+        line-height: 106px;
+    }
+    .main-quotes{
+        display: none;
+    }
+    /* index-schedule */
+    .index-category{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        row-gap: 100px;
+    }
+    .index-category img {
+        padding: 0;
+        width: 100%;
+        height: 40%;
+        padding-right: 30px;
+    }
+    .index-category-box{
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60%;
+        row-gap: 10px;
+    }
+    .index-category-box h3{
+        text-align: center;
+        font-size: 80px;
+        line-height: 60px;
+    }
+    .index-category-box h4{
+        text-align: center;
+        font-size: 40px;
+        line-height: 60px;
+
+    }
+    .index-category-box p{
+        font-size: 25px;
+        line-height: 50px;
+        color: black;
+    }
+    /* about */
+    .index-about{
+        height: 300vh;
+        background-color: #1A253A;
+        background-image: url(./image/back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .index-about-flex{
+        display: flex;
+        height: 80%;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        row-gap: 100px;
+    }
+    .index-about-box01{
+        width: 95%;
+        height: fit-content;
+        background-color: #fff;
+        background-size: cover;
+
+    }
+    .index-about-box01 h2{
+        text-align: left;
+        font-size: 70px;
+        line-height: 60px;
+    }
+    .index-about-box01 h3{
+        text-align: center;
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .index-about-box01 h4{
+        font-size: 40px;
+        line-height: 25px;
+        padding-top: 30px;
+    }
+    .index-about-box01 ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .index-about-box01 ul li {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    .sub-list{
+        margin-left: 20px;
+    }
+}
