@@ -1,7 +1,7 @@
 /* main */
 main{
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     background-color: #1A253A;
     background-image: url(./image/back.png);
     background-repeat: no-repeat;
@@ -24,13 +24,16 @@ main h1{
     color: rgb(255, 255, 255);
     font-size: 96px;
     line-height: 106px;
+    text-align: center;
 }
 .main-intro h2{
     color: rgb(255, 255, 255);
     font-size: 50px;
     line-height: 106px;
+    text-align: center;
 }
 .main-intro a{
+    text-decoration: none;
     background-color: var(--siteColor01);
     font-size: 25px;
     text-align: center;
@@ -47,6 +50,55 @@ main p{
 main img{
     height: 100%;
 }
+
+.index-service{
+    width: 100%;
+    height: 50vh;
+    padding: 60px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+.index-service-box{
+    height: 220px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0000;
+}
+.index-service-box:nth-child(1){
+    background-image: url(./image/service3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.index-service-box:nth-child(2){
+    background-image: url(./image/service4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.index-service-box:nth-child(3){
+    background-image: url(./image/service1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.index-service-box:nth-child(4){
+    background-image: url(./image/service2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.index-service-box a{
+    text-decoration: none;
+    color: var(--site-color03);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
 
 /* index-schedule */
 .index-category{
@@ -104,13 +156,14 @@ main img{
     font-size: 18px;
     width: 240px;
     height: fit-content;
+    text-decoration: none;
 }
 
 /* about */
 .index-about{
     height: 1200px;
-    background-color: #1A253A;
-    background-image: url(./image/back.png);
+    background-color: var(--site-color03);
+    /* background-image: url(./image/back.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -125,6 +178,7 @@ main img{
 .index-about-box01{
     height: 95%;
     width: 700px;
+    border-radius: 20px;
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,7 +236,7 @@ main img{
         flex-direction: column;
     }
     .main-intro{
-        height: 40%;
+        height: 100%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -196,6 +250,59 @@ main img{
     .main-quotes{
         display: none;
     }
+
+/* service */
+
+    .index-service{
+        width: 100%;
+        height: fit-content;
+        padding: 60px 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 100px;
+    }
+    .index-service-box{
+        height: 220px;
+        width: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff0000;
+    }
+    .index-service-box:nth-child(1){
+        background-image: url(./image/service3.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .index-service-box:nth-child(2){
+        background-image: url(./image/service4.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .index-service-box:nth-child(3){
+        background-image: url(./image/service1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .index-service-box:nth-child(4){
+        background-image: url(./image/service2.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .index-service-box a{
+        text-decoration: none;
+        color: var(--site-color03);
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+
+
     /* index-schedule */
     .index-category{
         width: 100%;
@@ -211,14 +318,14 @@ main img{
         padding: 0;
         width: 100%;
         height: 40%;
-        padding-right: 30px;
+        padding: 0 30px;
     }
     .index-category-box{
         background-color: #fff;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 60%;
+        height: fit-content;
         row-gap: 10px;
     }
     .index-category-box h3{
@@ -227,21 +334,46 @@ main img{
         line-height: 60px;
     }
     .index-category-box h4{
+        padding: 0;
         text-align: center;
         font-size: 40px;
         line-height: 60px;
 
     }
     .index-category-box p{
+        padding: 0;
+        padding: 0 30px;
         font-size: 25px;
         line-height: 50px;
         color: black;
     }
+    .a-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        padding: 0;
+        padding: 0 30px;
+    
+    }
+    .a-box a{
+        display: block;
+        font-size: 35px;
+        padding: 10px 20px;
+        text-align: center;
+        background-color: var(--siteColor01);
+        font-size: 18px;
+        width: 240px;
+        height: fit-content;
+    }
+
+
+
     /* about */
     .index-about{
         height: fit-content;
-        background-color: #1A253A;
-        background-image: url(./image/back.png);
+        background-color: var(--site-color03);
+        /* background-image: url(./image/back.png); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -250,32 +382,29 @@ main img{
         display: flex;
         height: 100%;
         flex-direction: column;
+        justify-content: center;
     }
     .index-about-box01{
         height: fit-content;
-        width: fit-content;
-        background-color: #1A253A;
-        background-image: url(./image/back.png);
+        width: 80%;
+        background-color: #fff;
+        /* background-image: url(./image/back.png); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 100px 0;
     
     }
     .index-about-box01 h2{
-        color: #fff;
         text-align: left;
         font-size: 50px;
         line-height: 60px;
     }
     .index-about-box01 h3{
-        color: #fff;
         text-align: left;
         font-size: 40px;
         line-height: 40px;
     }
     .index-about-box01 h4{
-        color: #fff;
         font-size: 30px;
         line-height: 25px;
         padding-top: 30px;
@@ -285,7 +414,6 @@ main img{
         padding: 0;
     }
     .index-about-box01 ul li {
-        color: #fff;
         font-weight: bold;
         font-size: 20px;
         margin-top: 10px;

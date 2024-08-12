@@ -9,6 +9,7 @@
 :root{
     --siteColor01: #c13584;
     --siteClor02: #9e2f6e;
+    --site-color03: #ff5e00;
     --menu-count: 7;
 }
 body {
@@ -75,7 +76,13 @@ p{
     height: 100%;
     display: flex;
 }
-
+.header-main-logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--site-color03);
+    align-self: center;
+}
 .header-main-logo img {
     height: 50px;
     align-self: center;
@@ -250,41 +257,44 @@ footer img {
         height: fit-content;
         flex-direction: column;
         justify-content: flex-start;
-        background: #444759;
+        background: #ffffff;
     }
     .header-main-logo{
-        height: 70%;
+        height: 100%;
         width: 100%;
-        background: #444759;
-        padding-left: 20px;
+        background: #fff;
+        padding-top: 50px;
         flex-wrap: wrap; 
         display: flex;
         flex-direction: column; 
     }
     .header-main-logo img {
-        height: 30%;
+        /* height: 20%;
         align-self: center;
-        padding-left: 30px;
+        padding-left: 30px; */
+        display: none;
+    }
+    .header-main-logo a {
+        font-size: 40px;
+        padding: 20px 0px 20px 0px;
+        align-self: center;
     }
     .header-main-logo .header-main-nav{
+        padding: 0;
         width: 100%;
-        height: 70%;
-        background: #444759;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        height: 100%;
+        background: #fff;
     }
     .header-main-nav ul {
         width: 100%;
         list-style: none;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
     .header-main-nav ul li {
         width: 100%;
         height: calc(100%/var(--menu-count));
-        border-top: 1px solid #000000;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -295,7 +305,7 @@ footer img {
         width: 100%;
         font-size: 25px;
         font-weight: bold;
-        color: black;
+        color: #000;
         text-align: center;
     }
     .header-main-nav ul li a:hover {
@@ -305,6 +315,7 @@ footer img {
         opacity: 0;
         display: none;
         position: relative;
+        background-color: #000000;
         z-index: 1;
         transition: all ease 0.5s;
     }
@@ -312,42 +323,43 @@ footer img {
         display: block;
         opacity: 1;
     }
-    .dropdown li {
+    .header-main-nav .dropdown li {
         width: 100%;
     }
-    .dropdown li a {
+    .header-main-nav .dropdown li a {
+        color: #ffffff;
         padding: 12px 16px;
-        color: #fff;
         text-align: left;
         display: block;
         text-decoration: none;
-    }
-    
+    } 
     .dropdown li a:hover {
         background-color: #575757;
     }
     .header-main-sm{
+        padding: 0;
         /* background-color: red; */
         width: 100%;
         display: flex;
-        align-content: center;
         justify-content: center;
-        column-gap: 10px;
+        column-gap: 30px;
     }
     .header-main-sm-fb{
         height: 70px;
         width: 70px;
-        background-image: url(../css/image/facebook.png);
+        background-image: url(../css/image/facebook-color.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
     .header-main-sm-line{
         height: 70px;
         width: 70px;
-        background-image: url(../css/image/instagram.png);
+        background-image: url(../css/image/instagram-color.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    
     /* footer */
     footer{
         width: 100%;
