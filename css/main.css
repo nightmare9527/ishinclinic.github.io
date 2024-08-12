@@ -7,13 +7,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 :root{
-    --siteColor01: #c13584;
+    --siteColor01: #ff5e00;
     --siteClor02: #9e2f6e;
     --site-color03: #ff5e00;
+    --site-color04: #30416e;
     --menu-count: 7;
 }
 body {
-    background-color: #1A253A;
+    background-color: var(--site-color04);
     background-image: url(./image/back.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -191,10 +192,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: var(--site-color04);
 }
 .info{
-    background-color: #000000;
+    background-color: var(--site-color04);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -359,7 +360,7 @@ footer img {
         background-size: cover;
     }
 
-    
+
     /* footer */
     footer{
         width: 100%;
@@ -368,10 +369,11 @@ footer img {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #000000;
+        background-color: var(--site-color04);
     }
     .info{
-        background-color: #000000;
+        padding-top: 20px;
+        background-color: var(--site-color04);
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
