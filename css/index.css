@@ -20,12 +20,6 @@ main{
     flex-direction: column;
     row-gap: 15px;
 }
-main h1{
-    color: var(--site-color03);
-    font-size: 96px;
-    line-height: 106px;
-    text-align: center;
-}
 .main-intro h2{
     color: rgb(255, 255, 255);
     font-size: 50px;
@@ -135,37 +129,40 @@ main .main-quotes img{
 
 /* index-schedule */
 .index-category{
+    padding-top: 100px;
     width: 100%;
-    padding: 200px 0;
-    display: flex;
-    justify-content: center;
+    height: fit-content;
     background-color: #fff;
 }
 .index-category img {
-    padding: 0px 0 0 60px;
-    width: 70%
+    width: 40%;
+    padding: 50px 0;
 }
 .index-category-box{
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 30%;
-    height: 700px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     row-gap: 10px;
 }
 .index-category-box h3{
-    padding-left: 15px;
+    text-align: center;
     font-size: 80px;
     line-height: 60px;
 }
 .index-category-box h4{
-    padding: 20px 0px 20px 40px;
+    text-align: center;
     font-size: 40px;
-    line-height: 60px;
+    line-height: 30px;
 
 }
 .index-category-box p{
-    padding-left: 50px;
+    text-align: center;
     font-size: 25px;
     line-height: 50px;
     color: black;
@@ -194,7 +191,8 @@ main .main-quotes img{
 
 /* about */
 .index-about{
-    height: 1200px;
+    height: fit-content;
+    padding: 100px 0;
     background-color: var(--site-color03);
     background-image: url(./image/IMG_1440.JPG);
     background-repeat: no-repeat;
@@ -209,7 +207,7 @@ main .main-quotes img{
     column-gap: 400px;
 }
 .index-about-box01{
-    height: 95%;
+    height: fit-content;
     width: 700px;
     border-radius: 20px;
     background-color: #fff;
@@ -219,7 +217,7 @@ main .main-quotes img{
 
 }
 .index-about-box01 img{
-    width: 30%;
+    width: 60%;
     border-radius: 10px;
     display: block;
     margin-left: auto;
@@ -227,18 +225,18 @@ main .main-quotes img{
 }
 .index-about-box01 h2{
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     line-height: 60px;
     padding-top: 15px;
 }
 .index-about-box01 h3{
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 40px;
     padding-bottom: 20px;
 }
 .index-about-box01 h4{
-    font-size: 30px;
+    font-size: 20px;
     line-height: 25px;
 }
 .index-about-box01 ul {
@@ -247,7 +245,7 @@ main .main-quotes img{
 }
 .index-about-box01 ul li {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
@@ -277,12 +275,18 @@ main .main-quotes img{
         justify-content: center;
     }
     .main-intro h1{
-        color: rgb(255, 255, 255);
-        font-size: 86px;
+        color: var(--site-color03);
+        font-size: 60px;
         line-height: 106px;
     }
     .main-quotes{
         display: none;
+    }
+    .main-intro h2{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
     }
 
 /* service */
@@ -292,6 +296,11 @@ main .main-quotes img{
         height: fit-content;
         padding: 60px 0;
         background-color: #fff;
+    }
+    .index-service h3{
+        padding-left: 15px;
+        font-size: 60px;
+        line-height: 30px;
     }
     .index-service-box-mother{
         background-color: #fff;
@@ -379,7 +388,8 @@ main .main-quotes img{
     }
     .index-category-box p{
         padding: 0;
-        padding: 0 30px;
+        text-align: center;
+        padding-top: 20px;
         font-size: 25px;
         line-height: 50px;
         color: black;
@@ -390,12 +400,10 @@ main .main-quotes img{
         justify-content: center;
         column-gap: 10px;
         padding: 0;
-        padding: 0 30px;
     
     }
     .a-box a{
         display: block;
-        font-size: 35px;
         padding: 10px 20px;
         text-align: center;
         background-color: var(--siteColor01);
@@ -433,16 +441,16 @@ main .main-quotes img{
     }
     .index-about-box01 h2{
         text-align: left;
-        font-size: 50px;
+        font-size: 35px;
         line-height: 60px;
     }
     .index-about-box01 h3{
         text-align: left;
-        font-size: 40px;
+        font-size: 25px;
         line-height: 40px;
     }
     .index-about-box01 h4{
-        font-size: 30px;
+        font-size: 20px;
         line-height: 25px;
         padding-top: 30px;
     }
@@ -452,7 +460,7 @@ main .main-quotes img{
     }
     .index-about-box01 ul li {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 5px;
