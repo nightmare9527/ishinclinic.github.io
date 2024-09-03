@@ -201,13 +201,27 @@ main .main-quotes img{
     }
     .index-category-name h3{
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 30px;
+        padding-bottom: 20px;
     }
     .index-category-about{
         height: 80%;
         width: 100%;
         padding: 0;
+    }
+    .index-category-about h4{
+        text-align: left;
+        padding: 20px 0px 20px 40px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .index-category-about ul li {
+        font-weight: bold;
+        margin-left: 20px;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .index-category-box02{
         background-color: var(--site-color03);
@@ -227,8 +241,9 @@ main .main-quotes img{
     .index-category-name02 h3{
         color: #fff;
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 30px;
+        padding-bottom: 20px;
     }
     .index-category-about02{
         height: 80%;
@@ -237,9 +252,17 @@ main .main-quotes img{
     }
     .index-category-about02 h4{
         color: #fff;
-        text-align: center;
+        text-align: left;
         padding: 20px 0px 20px 40px;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 25px;
+    }
+    .index-category-about02 ul li {
+        color: #fff;
+        font-weight: bold;
+        margin-left: 20px;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
